@@ -142,14 +142,14 @@ require_once 'helper.php';
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+    			<div class="nav-collapse collapse">
+        			<?php echo build_categories_dropdown_menu(); ?>
+				</div>
                 </button>
                 <form name="search" method="get" action="<?php echo osc_href_link(FILENAME_SEARCH, null, 'NONSSL', false);?>" class="navbar-search pull-right">
                     <input id="keywords" type="text" name="keywords" class="search-query keywords" placeholder="Search" />
                     <div class="icon-search"></div>
                 </form>
-    			<div class="nav-collapse collapse">
-        			<?php echo build_categories_dropdown_menu(); ?>
-                </div>
             </div>
         </div>
     </div>
